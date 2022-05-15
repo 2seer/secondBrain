@@ -1,6 +1,9 @@
 [[@RestController]]
-[[@ResponseBody]]
+
 [[@Getter]]
+
 [[@GetMapping]]
+
 [[@RequestParam]]
+
 [[@RequiredArgsConstructor]]
