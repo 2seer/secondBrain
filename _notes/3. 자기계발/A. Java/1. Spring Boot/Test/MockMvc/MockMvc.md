@@ -1,8 +1,10 @@
 2022-05-15 19:17
 ## Today I Learned
 ---
-aliases : []
+aliases : 스프링부트
+
 tags : #Test
+
 ---
 
 ## Content

@@ -1,8 +1,10 @@
 2022-05-15 23:10
 ## Brief Note
 ---
-aliases : []
+aliases : 지큐
+
 tags : #블록체인 
+
 ---
 
 ## Content

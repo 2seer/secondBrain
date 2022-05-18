@@ -1,7 +1,8 @@
 2022-05-17 18:24
 ## Today I Learned
 ---
-aliases : []
+aliases : 깃
+
 tags : #Git
 
 ---

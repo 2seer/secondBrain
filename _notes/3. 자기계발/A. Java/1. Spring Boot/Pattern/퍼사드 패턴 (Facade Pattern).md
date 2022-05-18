@@ -1,8 +1,10 @@
 created : 2022-05-14
 ## Today I Learned
 ---
-aliases : []
+aliases : 스프링부트
+
 tags : #디자인패턴
+
 ---
 
 ## Content

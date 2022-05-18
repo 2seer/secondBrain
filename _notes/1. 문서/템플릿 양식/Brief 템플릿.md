@@ -1,8 +1,10 @@
 <% tp.file.creation_date() %>
 ## Brief Note
 ---
-aliases : []
-tags : [[3.자기계발]]
+aliases : 지큐
+
+tags : #지식큐레이션
+
 ---
 
 ## Content
