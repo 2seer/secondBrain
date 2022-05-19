@@ -3,37 +3,34 @@ created: ["{{date}} {{time}}"]
 tags: ["#log/dailylog"]
 ---
 
-# 📅 Daily Log {{date: DD-MM-YYYY}}
+# 📅 데일리로그 {{date: YYYY-MM-DD}}
 
 ---
-## 🔷 Daily Tasks
-- [ ] Breakfast
-- [ ] Study something
-- [ ] Work on personal projects
-- [ ] Workout
-	- [ ] Push up's
-	- [ ] Sit downs
-	- [ ] Deeps
-# 🕴 Business
-## 🎯 Objectives
+## 🔷 오늘 한 일
+- [ ] 개인공부
+- [ ] 운동
+	- [ ] 오전 스쿼트
+	- [ ] 오후 스쿼트
+# 🕴 Task
+## 🎯 목표
 - 
-## 🚀 Working On
+## 🚀 작업
 - 
-## 📕 Reminders
+## 📕 리마인더
 - 
-## 📚 Reading
+## 📚 독서
 - 
-##  💬 Lingering feelings, Observations and Thoughts 
-1. Lingering Feelings
+##  💬 여운, 관찰 및 생각
+1. 여운
 	1. 
-2. Observations
+2. 관찰
 	1. 
-3. Thoughts
+3. 생각
 	1. 
-## 🔃 Reflection
+## 🔃 자기성찰
 1. 
 ---
 
-## 📅 Today's Notes
+## 📅 일간노트
 - 🕛9:00 
-	- Wok up and 
+	- 기상
