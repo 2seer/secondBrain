@@ -1,9 +1,9 @@
 2022-05-19 23:34
 ## Today I Learned
 ---
-aliases : TIL
+aliases : [Spring Data JPA]
 
-tags : #JPA 
+tags : SpringDataJPA
 
 ---
 

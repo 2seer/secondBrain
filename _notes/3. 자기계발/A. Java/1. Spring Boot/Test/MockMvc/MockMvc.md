@@ -1,7 +1,7 @@
 2022-05-15 19:17
 ## Today I Learned
 ---
-aliases : 스프링부트
+aliases : [스프링부트, 테스트]
 
 tags : #Test
 

@@ -1,7 +1,7 @@
 2022-05-20 23:21
 ## Today I Learned
 ---
-aliases : TIL
+aliases : [어노말리]
 
 tags : #데이터베이스
 
