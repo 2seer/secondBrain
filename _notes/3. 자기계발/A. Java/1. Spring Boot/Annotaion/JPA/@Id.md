@@ -3,7 +3,7 @@
 ---
 aliases : TIL, id
 
-tags : #JPA, #GeneratedValue
+tags : [[JPA]], [[GeneratedValue]]
 
 ---
 

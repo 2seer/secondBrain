@@ -3,7 +3,7 @@
 ---
 aliases : 깃
 
-tags : #Git
+tags : [[Git]]
 
 ---
 

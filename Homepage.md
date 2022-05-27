@@ -13,10 +13,10 @@ banner_icon: 🏖️
 
 # Rainbell
 - **AGENDA**
-	- `$= '[['+moment().format("YYYY年MM月DD日")+'|今日笔记]]'`
-	- `$= '[['+moment().format("YYYY年M月规划")+'|月度笔记]]'`
-	- `$= '[['+moment().format("YYYY年第Q季度规划")+'|季度笔记]]'`
-	-  `$= '[['+moment().format("YYYY年年度规划")+'|年度笔记]]'`
+	- `$= '[['+moment().format("YYYY년MM월DD일")+'|오늘의 메모]]'`
+	- `$= '[['+moment().format("YYYY년M月规划")+'|월간 노트]]'`
+	- `$= '[['+moment().format("YYYY年第Q季度规划")+'|분기별 노트]]'`
+	-  `$= '[['+moment().format("YYYY年年度规划")+'|연간 노트]]'
 	- [[00. 近五年目标|5年计划]]
 - **LIFE**
 	- [[00. 书单|图书馆]]
@@ -76,7 +76,7 @@ dv.paragraph(`![[${moment().subtract(1, 'days').format("YYYY年MM月DD日#鸟崽
 
 
 ```ad-col2
-![[2021年12月30日#日记]]
+![[2022-05-27]]
 
 ![[2021年12月30日#日程]]
 
@@ -90,23 +90,24 @@ dv.paragraph(`![[${moment().subtract(1, 'days').format("YYYY年MM月DD日#鸟崽
 
 %% PROJECT TRACKING SECTION %%
 
-%% 项目追踪代码 %%
+%% 프로젝트 추적코드 %%
 
 
 **PROJECT TRACKING**
 
-\* 追踪标有 \#project 标签的项目文档。
+#project 태그로 표시된 프로젝트 문서를 추적합니다.
+
 
 %%
 
 __Notes to display__
 *Gets either notes in a folder or notes with a certain tag. Leave one of them empty.*
 sourceFolder:: 
-sourceTag:: #project 
+sourceTag:: [[project]] 
 
 __Notes to exclude__
 *Leave empty to disable. Notes with the yaml-key `status` and value `exclude` for that key are also excluded.)*
-excludeTag:: #excludetracking
+excludeTag:: [[excludetracking]]
 
 __Counting Settings__
 *"chars" or "words"*
@@ -696,7 +697,7 @@ TABLE
   status AS "进度",
   rating AS "评分",
   description AS "简介"
-FROM #reading
+FROM [[reading]]
 SORT rating DESC
 ```
 

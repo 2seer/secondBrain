@@ -3,7 +3,7 @@ created: ["{{date}} {{time}}"]
 tags: ["#log/dailylog"]
 ---
 # Metadata:
-- Tag:: #log/dailylog
+- Tag:: [[log/dailylog]]
 - Created:: {{date: DD-MM-YYYY}}
 - Week:: 
 

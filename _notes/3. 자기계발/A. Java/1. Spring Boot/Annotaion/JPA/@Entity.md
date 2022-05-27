@@ -3,7 +3,7 @@
 ---
 aliases : TIL
 
-tags : #JPA #Builder
+tags : [[JPA]] [[Builder]]
 
 ---
 

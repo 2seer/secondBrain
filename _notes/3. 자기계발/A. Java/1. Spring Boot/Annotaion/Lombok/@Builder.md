@@ -1,9 +1,9 @@
 2022-05-19 23:46
 ## Today I Learned
 ---
-aliases : #Builder, 빌더
+aliases : [[Builder]], 빌더
 
-tags : #어노테이션 #Lombok
+tags : [[어노테이션]] [[Lombok]]
 
 ---
 

@@ -3,7 +3,7 @@
 ---
 aliases : [DML, INSERT, UPDATE, DELETE]
 
-tags : #데이터베이스 
+tags : [[데이터베이스]] 
 
 ---
 

@@ -3,7 +3,7 @@
 ---
 aliases : TIL
 
-tags : #자기계발
+tags : [[자기계발]]
 
 ---
 

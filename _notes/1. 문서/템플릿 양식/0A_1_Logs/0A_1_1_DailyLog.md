@@ -1,9 +1,10 @@
 ---
 created: ["{{date}} {{time}}"]
 tags: ["#log/dailylog"]
+---
 
 [[이전날]] | [[다음날]]
----
+
 
 # 📅 데일리로그 {{date: YYYY-MM-DD}}
 

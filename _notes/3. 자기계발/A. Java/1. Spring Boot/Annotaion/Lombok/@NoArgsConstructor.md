@@ -3,7 +3,7 @@
 ---
 aliases : TIL
 
-tags : #어노테이션 #Lombok
+tags : [[어노테이션]] [[Lombok]]
 
 ---
 

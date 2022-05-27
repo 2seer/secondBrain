@@ -3,7 +3,7 @@
 ---
 aliases : TIL
 
-tags : #JPA
+tags : [[JPA]]
 
 ---
 
