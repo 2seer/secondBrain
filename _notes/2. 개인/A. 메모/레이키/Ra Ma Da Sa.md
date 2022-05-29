@@ -1,9 +1,9 @@
 2022-05-22 19:56
 ## Brief Note
 ---
-aliases : 지큐
+aliases : 라마다사
 
-tags : [[지식큐레이션]]
+tags : [[레이키]]
 
 ---
 
