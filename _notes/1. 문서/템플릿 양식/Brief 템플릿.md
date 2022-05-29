@@ -1,9 +1,9 @@
 <% tp.file.creation_date() %>
 ## Brief Note
 ---
-aliases : 지큐
+aliases: 지큐
 
-tags : [[지식큐레이션]]
+tags: [[지식큐레이션]]
 
 ---
 
