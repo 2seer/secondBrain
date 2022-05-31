@@ -49,16 +49,6 @@ banner_icon: 🏖️
 dv.paragraph(`![[${moment().format("YYYY-MM-DD#일기")}]]`)
 ```
 
-```dataviewjs
-dv.paragraph(`![[${moment().format("YYYY-MM-DD#일정")}]]`)
-```
-
-![[parrotnobackground.png#center|200]]
-
-```dataviewjs
-dv.paragraph(`![[${moment().subtract(1, 'days').format("YYYY-MM-DD#鸟崽")}]]`)
-```
-
 <br>
 
 ````
