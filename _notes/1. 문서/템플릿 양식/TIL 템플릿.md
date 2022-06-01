@@ -1,5 +1,5 @@
 ---
-created: ["{{date}} {{time}}"]
+created: ["<% tp.file.creation_date() %>"]
 tags: [Today_I_Learned]
 ---
 
