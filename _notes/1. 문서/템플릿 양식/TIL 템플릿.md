@@ -1,12 +1,9 @@
-<% tp.file.creation_date() %>
-## Today I Learned
 ---
-aliases: TIL
-
-tags: [[자기계발]]
-
+created: ["{{date}} {{time}}"]
+tags: [Today_I_Learned]
 ---
 
+# Today I Learned
 ## 내용
 -
 
@@ -14,5 +11,4 @@ tags: [[자기계발]]
 	- <% tp.file.creation_date() %> 최초 작성
 
 
-📙출처 :
-URL :
+📙URL :

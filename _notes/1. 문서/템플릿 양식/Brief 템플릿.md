@@ -1,12 +1,9 @@
-<% tp.file.creation_date() %>
-## Brief Note
 ---
-aliases: 지큐
-
-tags: [[지식큐레이션]]
-
+created: ["{{date}} {{time}}"]
+tags: [Brief]
 ---
 
+# Brief Note
 ## 내용
 -
 
@@ -17,5 +14,4 @@ tags: [[지식큐레이션]]
 	-
 
 
-📙출처 :
-URL :
+📙URL :
