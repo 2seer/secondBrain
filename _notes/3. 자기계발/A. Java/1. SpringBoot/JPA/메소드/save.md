@@ -1,7 +1,7 @@
 ---
 created: ["2022-06-04 22:47"]
 aliases: []
-tags : [3.자기계발/A.Java/1.SpringBoot/JPA/메서드]
+tags : [3.자기계발/A.Java/1.SpringBoot/JPA/메소드]
 comments: true
 ---
 
