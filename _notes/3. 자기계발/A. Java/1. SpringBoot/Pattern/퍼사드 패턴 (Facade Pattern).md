@@ -2,6 +2,7 @@
 created: [2022-05-14 22:19]
 aliases: []
 tags : [3.자기계발/A.Java/1.SpringBoot/Pattern]
+comments: true
 ---
 
 # Today I Learned
