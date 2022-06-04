@@ -4,6 +4,7 @@ aliases: [DAPP]
 tags : [2.개인/A.메모/P2P]
 ---
 # Brief Note
+## Created : [[2022-05-15]]
 ## Content
 - [[이더리움]]과 같은 유형의 체인(서버)에서 돌아가는 APP
 

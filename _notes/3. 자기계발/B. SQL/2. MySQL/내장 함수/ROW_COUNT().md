@@ -5,6 +5,7 @@ tags : [3.자기계발/B.SQL/2.MySQL/내장함수]
 ---
 
 # Today I Learned
+## Created : [[2022-05-30]]
 ## 내용
 - `ROW_COUNT()` : INSERT, DELETE, UPDATE 쿼리를 통해 수행된 ROW 수를 알려준다.
 

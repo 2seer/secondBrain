@@ -5,6 +5,7 @@ tags : [3.자기계발/A.Java/1.SpringBoot/Annotation/Lombok]
 ---
 
 # Today I Learned
+## Created : [[2022-05-19]]
 ## Content
 - 해당 클래스의 빌더 패턴 클래스를 생성한다.
 - 생성자 상단에 생성자에 포함된 빌드만 빌더에 포함이 된다.

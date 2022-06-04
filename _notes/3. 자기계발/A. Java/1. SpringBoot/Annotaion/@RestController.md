@@ -5,6 +5,7 @@ tags : [3.자기계발/A.Java/1.SpringBoot/Annotation]
 ---
 
 # Today I Learned
+## Created : [[2022-05-14]]
 ## Content 
 - @RestController
 - 컨트롤러를 JSON을 반환하는 컨트롤러로 만들어 준다.

@@ -5,6 +5,7 @@ tags : [3.자기계발/B.SQL/2.MySQL/내장함수]
 ---
 
 # Today I Learned
+## Created : [[2022-05-30]]
 ## 내용
 - `LAST_INSERT_ID()` : 가장 최근에 성공적으로 수행된 INSERT 구문의 첫번째 AUTO_INCREMENT 컬럼의 값을 반환한다.
 

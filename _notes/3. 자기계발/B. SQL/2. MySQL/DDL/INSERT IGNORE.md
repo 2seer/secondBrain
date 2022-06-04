@@ -5,6 +5,7 @@ tags : [3.자기계발/B.SQL/2.MySQL/DDL]
 ---
 
 # Today I Learned
+## Created : [[2022-05-30]]
 ## 내용
 - `INSERT IGNORE` : 실행하는 동안 발생하는 무시할 수 있는 오류가 무시된다.
 
