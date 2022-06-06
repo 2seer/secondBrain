@@ -12,13 +12,12 @@ comments: true
 - Request 데이터를 받을 [[Dto]], API 요청을 받을 [[@Controller]], 트랜잭션, 도메인 기능 간의 순서를 보장하는 [[Service]]가 필요하다.
 - 여기에서 많은 사람들이 오해하는 것이 Service에서 비즈니스 로직을 처리해야 한다는 것([[스프링 웹 계층]] 참조)인데 비즈니스 처리를 담당해야할 곳은 Domain이다.
   (기존에 서비스로 처리하던 방식을 [[트랜잭션 스크립트]]라 한다.)
--  등록, 수정, 삭제 기능을 만들자
 
 Posts
 ```Java
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -42,6 +41,27 @@ public class Posts {
 }
 ```
 
+PostsController
+```Java
+@RequiredArgsConstructor
+@Controller
+public class IndexController {
+	private final PostsService postsService;
+
+	@GetMapping("/")
+	public String index(Model model) { // 서버 템플릿 엔진에서 사용할 수 있는 객체를 저장할 수 있다.
+		model.addAttribut("list", postsService.findAllDesc());
+	}
+
+	@GetMapping("/posts/update/{id}")
+	public String postsUpdate(@PathVariable Long id, Model model) {
+		PostsResponseDto dto = postsService.findById(id);
+		model.addAttribute("posts", dto);
+		return "posts-update";
+	}
+}
+```
+
 PostsApiController
 ```Java
 @RequiredArgsConstructor
@@ -58,6 +78,12 @@ public class PostsApiController {
 	@PutMapping("/api/v1/posts/{id}")
 	public PostsResponseDto findById(@PathVariable Long id) {
 		return postsService.findBy(id);
+	}
+
+	@DeleteMapping("/api/v1/posts/{id}")
+	public Long delete(@PathVariable Long id) {
+		postsService.delete(id);
+		return id;
 	}
 }
 ```
@@ -81,6 +107,22 @@ public class PostsService {
 		Posts posts = postsRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
 		posts.update(requestDto.getTitle(), requestDto.getContent());
 		return id;
+	}
+
+	@Transactional(readOnly = true)
+	// readOnly = true만 주면 트랜잭션 범위는 유지하되, 조회 기능만 남겨두어 조회 속도가 개선된다.
+	public List<PostsListResponseDto> findAllDesc() {
+		return postsRepository.findAllDesc().stream()
+			.map(PostListResponseDto::new)
+			// .map(posts -> new PostListResponseDto(posts))
+			.collect(Collectors.toList());
+	}
+
+	@Transactional
+	public void delete(Long id) {
+		Posts posts = postsRepository.findById(id).orElseThrow(() ->new IllegalArgumentException("해당 게시글이 없습니다. id="+id));
+		postsRepository.delete(posts);
+		// JpaRepository에서 delete 메서드를 지원
 	}
 }
 ```
@@ -135,7 +177,6 @@ public class PostsSaveResponseDto {
 ```
 
 PostsUpdateRequestDto
-
 ```Java
 @Getter
 @NoArgsConstructor
@@ -149,6 +190,34 @@ public class PostsUpdateRequestDto {
 		this.content = content;
 	}
 }
+```
+
+PostsListResponseDto
+```Java
+@Getter
+public class PostsListResponseDto {
+	private Long id;
+	private String title;
+	private String author;
+	private LocalDateTime modifiedDate;
+
+	public PostsListResponseDto(Posts entity) {
+		this.id = entity.getId();
+		this.title = entity.getTitle();
+		this.author = entity.getAuthor();
+		this.modifiedDate = entity.getModifiedDate();
+	}
+}
+
+```
+
+PostsRepository
+```Java
+public interface PostsRepository extends JpaRepository<Posts, Long> {
+	@Query("SELECT p FROM posts p ORDER BY p.id DESC")
+	List<Posts> findAllDesc();
+}
+
 ```
 
 PostApiControllerTest
@@ -223,7 +292,101 @@ public class PostsApiControllerTest {
 		assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
 		assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
 	}
+	@Test
+	public void BaseTimeEntity_등록() {
+		// given
+		LocalDateTime now = LocalDateTime.of(2022,6,6,0,0,0);
+		postsRepository.save(Posts.builder()
+			.title("title")
+			.content("content")
+			.author("author")
+			.build());
+
+		// when
+		List<Posts> postsList = postsRepository.findAll();
+
+		// then
+		Posts posts = postsList.get(0);
+		System.out.println(">>>>>>>> createDate = " + posts.getCreatedDate()+", modifiedDate = " + posts.getModifiedDate());
+		assertThat(posts.getCreatedDate()).isAfter(now);
+		assertThat(posts.getModifiedDate()).isAfter(now);
+	}
 }
+```
+
+index.js
+index 객체 내에서만 function이 유효하게 하여 JS와 겹치지 않게 유효범위를 만들어 사용한다.
+```javascript
+var main = {
+	init : function() {
+		var _this = this;
+		$('#btn_save').on('click', function() { // btn_save란 id를 가진 HTML 엘리먼트에 click 이벤트가 발생했을 때 save function을 실행하도록 이벤트를 등록한다.
+			_this.save();
+		});
+
+		$('#btn_update').on('click', function() {
+			_this.update();
+		});
+		
+		$('#btn_delete').on('click', function() {
+			_this.delete();
+		});
+	},
+	save : function() {
+		var data = {
+			title : $('#title').val(),
+			author: $('#author'),val(),
+			content: $('#content').val()
+		};
+		$.ajac({
+			type : 'POST',
+			url : '/api/v1/posts',
+			dataType : 'json',
+			contentType : 'application/json; charset=utf-8',
+			data: JSON.stringify(data)
+		}).done(function() {
+			alert('글이 등록되었습니다.');
+			window.location.href = '/';
+		}).fail(function (error) {
+			alert(JSON.stringify(error));
+		});
+	},
+	update : function() {
+		var data = {
+			title : $('#title').val(),
+			content: $('#content').val()
+		};
+		$.ajac({
+			type : 'PUT',
+			url : '/api/v1/posts' + id,
+			dataType : 'json',
+			contentType : 'application/json; charset=utf-8',
+			data: JSON.stringify(data)
+		}).done(function() {
+			alert('글이 수정되었습니다.');
+			window.location.href = '/';
+		}).fail(function (error) {
+			alert(JSON.stringify(error));
+		});
+	},
+	delete : function() {
+		var data = {
+			id : $('#id').val(),
+		};
+		$.ajac({
+			type : 'DELETE',
+			url : '/api/v1/posts' + id,
+			dataType : 'json',
+			contentType : 'application/json; charset=utf-8'
+		}).done(function() {
+			alert('글이 삭제되었습니다.');
+			window.location.href = '/';
+		}).fail(function (error) {
+			alert(JSON.stringify(error));
+		});
+	}
+};
+main.init();
 ```
 
 ## ⏱히스토리
