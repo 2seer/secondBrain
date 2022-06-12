@@ -1,6 +1,6 @@
 [[@RestController]]
 
-[[@Getter]]
+[[Getter]]
 
 [[@GetMapping]]
 
