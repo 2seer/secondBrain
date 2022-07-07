@@ -2,13 +2,15 @@
 
 title: Your first seed
 
+date created: 목요일, 7월 7일 2022, 8:15:41 오후
+date modified: 금요일, 7월 8일 2022, 8:15:19 오전
 ---
 
-### Welcome!
+# Welcome!
 
 This is your first note. You'll find it in the [`notes/`](https://github.com/maximevaillancourt/digital-garden-jekyll-template/tree/master/_notes) directory.
 
-### Link syntax
+# Link Syntax
 
 To link to another note, you can use multiple syntaxes. The following four use the "double-bracket" notation ([view the Markdown source file](https://github.com/maximevaillancourt/digital-garden-jekyll-template/blob/master/_notes/your-first-note.md#link-syntax) to see the underlying syntax).
 
@@ -34,11 +36,7 @@ Since the Web is all about HTML, you can always use plain HTML if you want, like
 
 Of course, you can also link to external websites, like this: [this is a link to Wikipedia](https://wikipedia.org/). Again, you can use plain HTML if you prefer. Footnotes are also supported and will be treated like internal links.[^1] You can point to other notes in your footnotes.[^2]
 
-[^1]: This is a footnote. For more information about using footnotes, check out the [Markdown Guide](https://www.markdownguide.org/extended-syntax/#footnotes).
-
-[^2]: This is another footnote that links to the note about [[cats]]. You may also point to [[notes that do not exist]] if you wish.
-
-### Tweet embedding
+# Tweet Embedding
 
 Note: This behavior is disabled by default for privacy reasons. See "Site configuration" section below to enable it.
 
@@ -46,7 +44,7 @@ You may include a tweet URL on its own line (like below), and it would be replac
 
 https://twitter.com/jack/status/20
 
-### Site configuration
+# Site Configuration
 
 Some behavior is configurable by tweaking the `_config.yml` file.
 
@@ -56,17 +54,17 @@ Some behavior is configurable by tweaking the `_config.yml` file.
 
 **`embed_tweets`**: when set to `true`, tweet URLs on their own lines will be replaced with a Twitter embed. Default value is `false`.
 
-### Automatic bi-directional links
+# Automatic Bi-directional Links
 
 Notice in the "Notes mentioning this note" section that there is another note linking to this note. This is a bi-directional link, and those are automatically created when you create links to other notes.
 
-### Link previews
+# Link Previews
 
-If you're on a device with mouse support, try hovering your mouse on internal links to preview the notes: [[a note about cats]].
+If you're on a device with mouse support, try hovering your mouse on internal links to preview the notes: [[cats]].
 
 Links that have been previewed will be cached to avoid redundant requests.
 
-### Images and other Markdown goodies
+# Images and Other Markdown Goodies
 
 Finally, because you have the full power of Markdown in this template, you can use regular Markdown syntax for various formatting options.
 
@@ -96,7 +94,7 @@ You can also ==highlight some content== by wrapping it with `==`.
 
 Non-latin languages are supported too: ==你好==, ==안녕하세요==, ==こんにちは==.
 
-### Code syntax highlighting
+# Code Syntax Highlighting
 
 You can add code blocks with full syntax color highlighting by wrapping code snippet in triple backticks and specifying the type of the code (`js`, `rb`, `sh`, etc.):
 
@@ -126,10 +124,13 @@ $ cat /dev/urandom | grep "the answer to life" # shell scripts look nice too
 
 ```
 
-### Next steps
+# Next Steps
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+This digital garden template is free, open-source, and [Markdown Guide](https://www.markdownguide.org/extended-syntax/#footnotes).
 
-The easiest way to build your own digital garden based on this template is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+The easiest way to build your own digital garden based on this template is to read this [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
 
 Go forth, have fun, and learn new something every day! ✌️
+
+[^1]: This is a footnote. For more information about using footnotes, check out the [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+[^2]: This is another footnote that links to the note about [[notes that do not exist]]. You may also point to [[a note about cats]] if you wish.

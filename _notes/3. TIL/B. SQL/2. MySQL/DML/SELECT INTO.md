@@ -2,6 +2,8 @@
 created: [2022-05-30 11:13]
 aliases: []
 tags : [3.자기계발/B.SQL/2.MySQL/DML]
+date created: 목요일, 7월 7일 2022, 8:13:44 오후
+date modified: 금요일, 7월 8일 2022, 8:15:20 오전
 ---
 
 # Today I Learned

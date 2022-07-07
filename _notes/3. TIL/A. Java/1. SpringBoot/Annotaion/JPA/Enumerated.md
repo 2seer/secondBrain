@@ -3,11 +3,13 @@ created: ["2022-06-07 23:52"]
 aliases: []
 tags: []
 comments: true
+date created: 목요일, 7월 7일 2022, 8:14:12 오후
+date modified: 금요일, 7월 8일 2022, 8:15:21 오전
 ---
 
 # Today I Learned
 ## Created : [[2022-06-07]]
-## Related tags : 
+## Related Tags :
 
 ## 내용
 - JPA로 데이터베이를 저장할 때 Enum 값을 어떤 형태로 저장할지를 결정한다. 기본적으로는 int로 된 숫자형

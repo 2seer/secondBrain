@@ -3,13 +3,15 @@ created: ["2022-06-06 23:52"]
 aliases: []
 tags: []
 comments: true
+date created: 목요일, 7월 7일 2022, 8:15:41 오후
+date modified: 금요일, 7월 8일 2022, 8:15:20 오전
 ---
 
 # Today I Learned
 ## 작성일 : [[2022-06-06]]
 ## 분야 :
 ## 키워드 : #Enumerated, #NoArgsConstructor
-## 상태 :  #작성중, #연결중 
+## 상태 : #작성중, #연결중
 ## 내용
 - 2.0에서는 1.5 방식에서와 달리 client 인증 정보만 입력을 하면 된다. (모두 enum값으로 대체)
 - CommonOAtu2Provieder라는 enum에서 구글, 깃허브, 페이스북, 옥타(2.7.0 이후 폐지)의 기본 설정값을 모두 제공해준다(이외의 소셜로그인인 경우 직접 다 추가를 해야함)

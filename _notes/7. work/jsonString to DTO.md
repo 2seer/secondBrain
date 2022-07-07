@@ -3,14 +3,16 @@ created: ["2022-06-24 16:54"]
 aliases: []
 tags: []
 comments: true
+date created: 목요일, 7월 7일 2022, 8:14:40 오후
+date modified: 금요일, 7월 8일 2022, 8:15:19 오전
 ---
 
 # jsonString to DTO
 ## 작성일 : [[2022-06-24]]
 ## 상위 문서 : [[7.work/]]
-## 분야 : #업무 
+## 분야 : #업무
 ## 키워드 : #ObjectMapper, #TypeRefernce, #CodeSnippet
-## 상태 :  #작성중, #연결중 
+## 상태 : #작성중, #연결중
 
 
 ## ObjectMapper

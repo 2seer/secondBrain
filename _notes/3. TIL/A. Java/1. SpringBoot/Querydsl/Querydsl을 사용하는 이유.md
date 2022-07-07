@@ -3,11 +3,13 @@ created: ["2022-06-06 23:31"]
 aliases: []
 tags: []
 comments: true
+date created: 목요일, 7월 7일 2022, 8:14:22 오후
+date modified: 금요일, 7월 8일 2022, 8:15:20 오전
 ---
 
 # Today I Learned
 ## Created : [[2022-06-06]]
-## Related tags : 
+## Related Tags :
 
 ## 내용
 - Querydsl, jooq, MyBatis 등을 통해 조회를 하고 등록/수정/삭제 등은 [[SpringDataJpa]]를 통해 진행한다.

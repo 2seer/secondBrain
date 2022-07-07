@@ -1,3 +1,7 @@
+---
+date created: 목요일, 7월 7일 2022, 8:13:16 오후
+date modified: 금요일, 7월 8일 2022, 8:15:22 오전
+---
 
 brew 설치
 brew tap homebrew/cask-fonts

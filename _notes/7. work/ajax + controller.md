@@ -3,14 +3,16 @@ created: ["2022-06-23 22:26"]
 aliases: []
 tags: []
 comments: true
+date created: 목요일, 7월 7일 2022, 8:14:43 오후
+date modified: 금요일, 7월 8일 2022, 8:15:19 오전
 ---
 
-# ajax + controller
+# Ajax + Controller
 ## 작성일 : [[2022-06-23]]
 ## 상위 문서 : [[7.work/]]
 ## 분야 : #업무
 ## 키워드 : #CodeSnippet
-## 상태 :  #작성중, #연결중 
+## 상태 : #작성중, #연결중
 
 
 ## [[RequestParam Annotation|@RequestParam]]
@@ -111,7 +113,7 @@ public class MemberApiController {
 
 ## 안티패턴
 ---
-### ordinal 메서드의 사용
+### Ordinal 메서드의 사용
 
 ## 참고문헌
 ---

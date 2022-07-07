@@ -3,6 +3,8 @@ created: ["2022-06-04 22:50"]
 aliases: []
 tags: []
 comments: true
+date created: 목요일, 7월 7일 2022, 8:13:31 오후
+date modified: 금요일, 7월 8일 2022, 8:15:21 오전
 ---
 
 # Today I Learned
