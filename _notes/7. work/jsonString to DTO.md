@@ -15,6 +15,30 @@ comments: true
 
 ## ObjectMapper
 ---
+javascript
+```Javascript
+let item = {};  
+item.id = parseInt(id);  
+item.name = name;  
+item.enabled = enabled;  
+item = JSON.stringify(item);  
+jsnString.push(JSON.parse(item));
+
+var data = new FormData();  
+data.append("menuId", menuId);  
+data.append("jsnString", JSON.stringify(jsnString));
+
+$.ajax({  
+    type: 'PUT',  
+    url: '/test/api/',  
+    data: data,  
+    processData: false,  
+    contentType: false,  
+    cache: false  
+})
+```
+
+
 jsonString 으로 List형 DTO 변환하기
 ```Java
 
@@ -22,41 +46,17 @@ jsonString 으로 List형 DTO 변환하기
 public ResponseEntity<Object> modAuditCategory(@Valid Dto req, HttpServletRequest request) throws JsonProcessingException {  
     ObjectMapper objectMapper = new ObjectMapper();  
     if (req.getJsnString() != null) {  
-        Dto[] list = objectMapper.readValue(req.getJsnString(), Dto[].class);  
-        for (Dto dto : list) {  
-            dto.setMenuId(req.getMenuId());  
-            memberService.mod(dto, request);  
-        }    
+        List<Dto> list = objectMapper.readValue(req.getJsnString(), new TypeReference<List<Dto>>() {});
+		for (int i = 0; i < list.size(); i++) {  
+		    list.get(i).setMenuId(req.getMenuId());  
+		    service.modUser(list.get(i), request);  
+		}  
     }    
     return ResponseEntity.noContent().build();  
 }
 ```
 
 
-
-## Examples
-----
-### : 가장 단순한 형태
-```Java
-	enum Season { WINTER, SPRING, SUMMER, FALL }
-```
-
-### : 데이터와 메서드가 있는 형태
-
-### : switch와 함께 사용하기
-
-## 안티패턴
----
-### ordinal 메서드의 사용
-
-## 참고문헌
----
-- 1
-
-
-## 주석
----
-- 1
 
 
 ## ⏱히스토리
