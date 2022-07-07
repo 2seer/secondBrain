@@ -41,7 +41,6 @@ $.ajax({
 
 jsonString 으로 List형 DTO 변환하기
 ```Java
-
 @PatchMapping(value = "/test1")
 public ResponseEntity<Object> modAuditCategory(@Valid Dto req, HttpServletRequest request) throws JsonProcessingException {  
     ObjectMapper objectMapper = new ObjectMapper();  
@@ -55,9 +54,6 @@ public ResponseEntity<Object> modAuditCategory(@Valid Dto req, HttpServletReques
     return ResponseEntity.noContent().build();  
 }
 ```
-
-
-
 
 ## ⏱히스토리
 	- 2022-06-24 16:54 최초 작성
