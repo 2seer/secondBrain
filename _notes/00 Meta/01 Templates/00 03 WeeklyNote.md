@@ -4,7 +4,7 @@ publish: false
 tags:
  - "#calendar/weekly/<% tp.date.now('YYYY') %>"
 
-banner: "![[<% tp.date.now('YYYY MMMM') %> Weekly Banner.jpg]]"
+banner: 
 banner_icon: 🗓️
 ---
   

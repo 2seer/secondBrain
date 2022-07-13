@@ -1,11 +1,8 @@
 ---
 aliases: [""]
 publish: false
-tags:
-- "#calendar/daily/<% tp.date.now("YYYY") %>"
-
-banner: "![[<% tp.date.now('YYYY MMMM') %> Banner.jpg]]"
-
+tags: "#calendar/daily/<% tp.date.now("YYYY") %>"
+banner: 
 ---
 
 # <% tp.date.now("YYYY-MM-DD") %>’s Note
@@ -16,7 +13,7 @@ banner: "![[<% tp.date.now('YYYY MMMM') %> Banner.jpg]]"
 
 > - Created:: <% tp.date.now("YYYY-MM-DD @ HH:mm") %>
 
-> - Updated:: <% tp.date.now("YYYY-MM-DD @ HH:mm") %>
+> - Updated:: <% tp.file.last_modified_date("YYYY-MM-DD @ HH:mm") %>
 
 > - ID:: <% tp.date.now('YYYYMMDDHHmm') %>
 
