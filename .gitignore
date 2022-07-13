@@ -14,5 +14,6 @@ _includes/notes_graph.json
 # Obsidian config
 .obsidian
 
-_notes/1. 문서/템플릿 양식/
-_notes/1. 문서/템플릿 양식/
+_notes/00 Meta/01 Templates
+_notes/00 Meta/04 Script
+_notes/70 Work
