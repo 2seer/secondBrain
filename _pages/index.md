@@ -11,9 +11,6 @@ permalink: /
   Take a look at <span style="font-weight: bold">[[your first note]]</span> to get started on your exploration.
 </p>
 
-링크 - 개념을 정하고 표시해서 연결
-태그 - 노트의 상태를 표시
-폴더 - 노트를 묶어서 큰 개념 안의 폴더
 
 <style>
   .wrapper {

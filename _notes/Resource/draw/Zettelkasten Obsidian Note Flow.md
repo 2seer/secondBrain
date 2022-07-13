@@ -31,7 +31,7 @@ f5fef5192217f729759e93ff9e2f00e336758505: [[Develop a topic]]
 51179b3284ccb5f6e3d32d769388b793f16fc218: [[Literature Note]]
 8cf787a2e92c5a71e0a55e4053134fa1bfd252ea: [[Reference System 🗄️]]
 d3df052b081cb356703921a768882edc83b52a4a: [[Start a sequence Note]]
-24becd547504447a383f3c44e2e674834b61aefe: [[10 🗄 Reference/Index Note.md]]
+24becd547504447a383f3c44e2e674834b61aefe: [[Index Note]]
 
 %%
 # Drawing
