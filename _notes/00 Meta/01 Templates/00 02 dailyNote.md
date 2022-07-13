@@ -2,7 +2,6 @@
 aliases: [""]
 publish: false
 tags: "#calendar/daily/<% tp.date.now("YYYY") %>"
-banner: 
 ---
 
 # <% tp.date.now("YYYY-MM-DD") %>’s Note
