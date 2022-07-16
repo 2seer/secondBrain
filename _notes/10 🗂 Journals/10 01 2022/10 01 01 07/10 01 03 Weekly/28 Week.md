@@ -19,11 +19,11 @@ banner_icon: 🗓️
 
 > [!METADATA]-
 
-> Created:: [[2022-07-14]] 16:12
+> Created:: [[2022-07-16]] 09:25
 
-> Updated:: 2022-07-14 16:12
+> Updated:: 2022-07-16 09:25
 
-> ID:: 20220714161211
+> ID:: 20220716092525
 
   
 
@@ -43,31 +43,31 @@ ___
 
 ## Memos
 
-- [[2022-07-10|월요일]]
+- [[2022-07-10|일요일]]
 
 ![[2022-07-10#^memo-link]]
 
-- [[2022-07-11|화요일]]
+- [[2022-07-11|월요일]]
 
 ![[2022-07-11#^memo-link]]
 
-- [[2022-07-12|수요일]
+- [[2022-07-12|화요일]]
 
 ![[2022-07-12#^memo-link]]
 
-- [[2022-07-13|목요일]]
+- [[2022-07-13|수요일]]
 
 ![[2022-07-13#^memo-link]]
 
-- [[2022-07-14|금요일]]
+- [[2022-07-14|목요일]]
 
 ![[2022-07-14#^memo-link]]
 
-- [[2022-07-15|토요일]]
+- [[2022-07-15|금요일]]
 
 ![[2022-07-15#^memo-link]]
 
-- [[2022-07-16|일요일]]
+- [[2022-07-16|토요일]]
 
 ![[2022-07-16#^memo-link]]
 
@@ -145,11 +145,11 @@ const attributes = {
 	},
 };
 
-const date = "2022-07-14";
+const date = "2022-07-16";
 customJS.DvCharts.renderWeeklyChart({
 	dv,
 	context: this,
-	daysPath: '10 🗂 Journals/10 01 2022/10 01 01 Dailies/',
+	daysPath: '02 Personal/02.01 Periodic Notes/2022/Daily/07 7월',
 	attributes,
 	type: 'average',
 	date
@@ -162,15 +162,25 @@ customJS.DvCharts.renderWeeklyChart({
 ```dataview
 
 TABLE WITHOUT ID
+
 link(file.name) as "Day",
+
 feeling AS "💭",
+
 money-spent AS "💸",
+
 panic AS "🌪️",
+
 prayer AS "🕋",
+
 steps AS "👣",
+
 hours-worked AS "✏️"
-FROM "/notes/10 🗂 Journals/10 01 2022/10 01 01 Dailies/"
+
+FROM "02 Personal/02.01 Periodic Notes"
+
 WHERE week = [[2022 Week 28]]
+
 SORT file.name ASC
 
 ```
