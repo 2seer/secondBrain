@@ -28,7 +28,7 @@ public abstract class BaseTimeEntity {
 }
 ```
 
-[[3A_1_1_1_스프링 부트에서_JPA로_데이터베이스를_다뤄보자|Posts]] 클래스가 BaseTimeEntity를 상속 받도록 변경하고 Application 클래스에 활성화 어노테이션 하나를 추가하자.
+[[스프링 부트에서_JPA로_데이터베이스를_다뤄보자|Posts]] 클래스가 BaseTimeEntity를 상속 받도록 변경하고 Application 클래스에 활성화 어노테이션 하나를 추가하자.
 
 @EnableJapAuditing // JPA Auditing 활성화
 

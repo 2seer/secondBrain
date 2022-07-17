@@ -130,7 +130,7 @@ public class PostsService {
 ```
 
 PostsSaveRequestDto
- - [[_notes/60 TIL/60 01 JAVA/JPA/Entity|Entity]] 클래스를 Request/Response 클래스로 사용해서는 안된다
+ - [[_notes/60 TIL/60 01 JAVA/60 01 09 JPA/Entity|Entity]] 클래스를 Request/Response 클래스로 사용해서는 안된다
     Request와 Response용 Dto는 view를 위한 클래스라 자주 변경이 필요하므로, View Layer와 DB Layer의 역할 분리를 철저하게 하는 것이 좋다. 
     (실제로 Controller에서 결괏값으로 여러 테이블을 조인해서 줘야할 경우가 빈번)
     즉 Entity 클래스과 Controller에서 쓸 Dto는 분리해서 사용해야 한다.
