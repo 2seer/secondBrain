@@ -7,9 +7,6 @@ date created: 목요일, 7월 7일 2022, 8:15:41 오후
 date modified: 금요일, 7월 8일 2022, 8:15:20 오전
 ---
 
-# Today I Learned
-## Created : [[2022-06-04]]
-
 ## 내용
 - Request 데이터를 받을 [[Dto]], API 요청을 받을 [[@Controller]], 트랜잭션, 도메인 기능 간의 순서를 보장하는 [[Service]]가 필요하다.
 - 여기에서 많은 사람들이 오해하는 것이 Service에서 비즈니스 로직을 처리해야 한다는 것([[스프링 웹 계층]] 참조)인데 비즈니스 처리를 담당해야할 곳은 Domain이다.
@@ -116,7 +113,6 @@ public class PostsService {
 	public List<PostsListResponseDto> findAllDesc() {
 		return postsRepository.findAllDesc().stream()
 			.map(PostListResponseDto::new)
-			// .map(posts -> new PostListResponseDto(posts))
 			.collect(Collectors.toList());
 	}
 
