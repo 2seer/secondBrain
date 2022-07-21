@@ -28,8 +28,9 @@ color purple
 TABLE WITHOUT ID
 	("[[" + name + "]]") AS "File",
 	effectiveness AS "Effectiveness",
-	feelings AS "🌈 I feel"
+	기분 AS "🌈 I feel"
 	
-FROM "Daily Log"
+FROM #daily
+WHERE file.name != "🗓 Daily Note"
 SORT file.name DESC
 ```
