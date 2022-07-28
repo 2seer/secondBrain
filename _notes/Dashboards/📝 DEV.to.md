@@ -10,7 +10,7 @@ banner_x: 0.5
 
 ---
 **Tags**:: #dashboard
-**Links**::[[📰 Dashboard]]
+**Links**::[[Dashboard]]
 
 ---
 

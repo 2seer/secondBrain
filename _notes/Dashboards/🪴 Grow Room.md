@@ -8,13 +8,13 @@ banner_icon: 🤯
 
 ---
 **Tags**:: #dashboard
-**Links**::[[📰 Dashboard]]
+**Links**::[[Dashboard]]
 
 ---
 
 ## Welcome to 🪴 Grow Room
 
-The 🪴 Grow Room is your inbox on current 🪵 Backlog Items, and [[🌱  Seeds]] you have created but not yet curated.
+The 🪴 Grow Room is your inbox on current 🪵 Backlog Items, and [[Seeds]] you have created but not yet curated.
 
 ---
 

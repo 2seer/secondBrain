@@ -5,7 +5,7 @@ type: bucket-list
 
 ---
 **Tags**:: #bucket-list
-**Links**:: [[🪣 Bucket List]]
+**Links**:: [[Bucket List]]
 **stage**::wait
 **why**::I want to explore the world
 

@@ -6,7 +6,7 @@ banner_y: 0.89667
 
 ---
 **Tags**:: #bucket-list
-**Links**:: [[🪣 Bucket List]]
+**Links**:: [[Bucket List]]
 **stage**::wait
 **why**::to see how beautiful they are
 

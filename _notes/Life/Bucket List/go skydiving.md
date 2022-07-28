@@ -6,7 +6,7 @@ banner_y: 0.04
 
 ---
 **Tags**:: #bucket-list
-**Links**:: [[🪣 Bucket List]]
+**Links**:: [[Bucket List]]
 **stage**::wait
 **why**::to overcome fear of heights
 

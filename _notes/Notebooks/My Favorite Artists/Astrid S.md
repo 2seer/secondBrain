@@ -12,4 +12,4 @@ banner_y: 0.25
 ---
 
 
-### Back to [[🎵 My Favorite Artists]]
+### Back to [[My Favorite Artists]]

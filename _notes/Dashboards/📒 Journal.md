@@ -7,7 +7,7 @@ banner_icon: 📒
 ---
 ---
 **Tags**:: #dashboard
-**Links**::[[📰 Dashboard]]
+**Links**::[[Dashboard]]
 
 ---
 

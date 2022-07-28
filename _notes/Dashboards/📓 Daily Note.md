@@ -8,7 +8,7 @@ description: A Dashboard for Daily Logs
 
 ---
 **Tags**:: #dashboard
-**Links**::[[📰 Dashboard]]
+**Links**::[[Dashboard]]
 
 ---
 

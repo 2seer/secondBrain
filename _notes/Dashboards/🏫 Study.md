@@ -7,7 +7,7 @@ description: My Study Dashboard
 
 ---
 **Tags**:: #dashboard
-**Links**::[[📰 Dashboard]]
+**Links**::[[Dashboard]]
 
 ---
 
